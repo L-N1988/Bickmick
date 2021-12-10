@@ -15,26 +15,39 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
+5
 (
-    walls
+    cylinderwalls
     {
         type            wall;
         inGroups        1(wall);
         nFaces          2500;
-        startFace       737500;
+        startFace       1019100;
     }
     atmosphere
     {
         type            patch;
         nFaces          2500;
-        startFace       740000;
+        startFace       1021600;
     }
     sides
     {
         type            patch;
         nFaces          10000;
-        startFace       742500;
+        startFace       1024100;
+    }
+    stationaryWalls
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          10400;
+        startFace       1034100;
+    }
+    outatmosphere
+    {
+        type            patch;
+        nFaces          2400;
+        startFace       1044500;
     }
 )
 
