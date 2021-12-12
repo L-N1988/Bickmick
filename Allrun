@@ -1,0 +1,13 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Set application name
+application=$(interFoam)
+
+runApplication blockMesh
+# runApplication topoSet
+# runApplication subsetMesh -overwrite c0 -patch floatingObject -noFields
+runApplication setFields
+runApplication $application
+
+#------------------------------------------------------------------------------

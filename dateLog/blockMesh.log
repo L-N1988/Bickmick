@@ -1,0 +1,91 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-057cd6c43423
+Exec   : blockMesh
+Date   : Dec 12 2021
+Time   : 23:29:52
+Host   : "liuning-PC"
+PID    : 13053
+I/O    : uncollated
+Case   : /home/liuning/SRTP/floatingBreakwater
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Deleting polyMesh directory
+    "/home/liuning/SRTP/floatingBreakwater/constant/polyMesh"
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 6
+		Number of boundary faces : 18
+		Number of defined boundary faces : 18
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 
+        j : 0.003
+        k : 0.04
+    Block 1 cell size :
+        i : 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 
+        j : 0.003
+        k : 0.04
+    Block 2 cell size :
+        i : 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 
+        j : 0.003
+        k : 0.04
+    Block 3 cell size :
+        i : 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 0.00942346 .. 0.00942346 0.00923499 .. 0.00923499 
+        j : 0.003
+        k : 0.04
+    Block 4 cell size :
+        i : 0.05
+        j : 0.05
+        k : 0.0166667 .. 0.0166667
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-1 -1 -0.5) (1 1 0.5)
+  nPoints: 232567
+  nCells: 221000
+  nFaces: 674400
+  nInternalFaces: 649100
+----------------
+Patches
+----------------
+  patch 0 (start: 649100 size: 5000) name: cylinderSide1
+  patch 1 (start: 654100 size: 5000) name: cylinderSide2
+  patch 2 (start: 659100 size: 2500) name: cylinderWall
+  patch 3 (start: 661600 size: 11200) name: stationaryWalls
+  patch 4 (start: 672800 size: 1600) name: atmosphere
+
+End
+
